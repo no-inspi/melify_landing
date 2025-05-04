@@ -2,10 +2,12 @@ import Image from "next/image";
 import BlurredShapeGray from "@/public/images/blurred-shape-gray.svg";
 import BlurredShape from "@/public/images/blurred-shape.svg";
 import FeaturesImage from "@/public/images/features.png";
+import AboutIcon from "@/public/images/about-icon.svg";
+import AboutIllustration from "@/public/images/about-illustration.svg";
 
 export default function Features() {
   return (
-    <section className="relative">
+    <section className="relative" id="features">
       <div
         className="pointer-events-none absolute left-1/2 top-0 -z-10 -mt-20 -translate-x-1/2"
         aria-hidden="true"
@@ -36,19 +38,30 @@ export default function Features() {
           <div className="mx-auto max-w-3xl pb-4 text-center md:pb-12">
             <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-linear-to-r before:from-transparent before:to-indigo-200/50 after:h-px after:w-8 after:bg-linear-to-l after:from-transparent after:to-indigo-200/50">
               <span className="inline-flex bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-                Advanced Controls
+                AI-Powered Features
               </span>
             </div>
             <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
-              Built for modern product teams
+              Email management, reimagined
             </h2>
             <p className="text-lg text-indigo-200/65">
-              Open AI reads and understands your files, and with nothing more
-              than a single line of feedback, so you can go further than the
-              speed of thought.
+              Melify leverages artificial intelligence to transform your email
+              experience. From smart composition to automatic categorization,
+              every feature is designed to save you time and boost productivity.
             </p>
           </div>
           <div className="flex justify-center pb-4 md:pb-12" data-aos="fade-up">
+            <div className="justify-center items-center inline-flex relative">
+              <Image
+                className="animate-float drop-shadow-[--drop-shadow-custom]"
+                src={AboutIcon}
+                width={76}
+                height={76}
+                alt="Features"
+              />
+            </div>
+          </div>
+          {/* <div className="flex justify-center pb-4 md:pb-12" data-aos="fade-up">
             <Image
               className="max-w-none"
               src={FeaturesImage}
@@ -56,7 +69,7 @@ export default function Features() {
               height={384}
               alt="Features"
             />
-          </div>
+          </div> */}
           {/* Items */}
           <div className="mx-auto grid max-w-sm gap-12 sm:max-w-none sm:grid-cols-2 md:gap-x-14 md:gap-y-16 lg:grid-cols-3">
             <article>
@@ -73,11 +86,12 @@ export default function Features() {
                 />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Project Milestones
+                Multi-Account Management
               </h3>
               <p className="text-indigo-200/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+                Connect and manage multiple Gmail accounts from a single
+                interface. Switch seamlessly between personal and work emails
+                with synchronized data across all accounts.
               </p>
             </article>
             <article>
@@ -91,11 +105,12 @@ export default function Features() {
                 <path d="M19 6H0v2h17v8H7v-6H5v8h19v-2h-5V6Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Team Views
+                AI Email Composition
               </h3>
               <p className="text-indigo-200/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+                Let AI help you write better emails faster. Get intelligent
+                suggestions, tone adjustments, and auto-completion to craft the
+                perfect message every time.
               </p>
             </article>
             <article>
@@ -112,11 +127,11 @@ export default function Features() {
                 />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Advanced Search
+                Smart Summarization
               </h3>
               <p className="text-indigo-200/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+                AI analyzes incoming emails and generates contextually
+                appropriate summary.
               </p>
             </article>
             <article>
@@ -138,11 +153,11 @@ export default function Features() {
                 <path d="m16.321 2-.5-.866 1.733-1 .5.866A22 22 0 0 1 21 12c0 3.852-1.017 7.636-2.948 10.97l-.502.865-1.73-1.003.501-.865A19.878 19.878 0 0 0 19 12a20 20 0 0 0-2.679-10Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Strategic Initiatives
+                Automatic Categorization
               </h3>
               <p className="text-indigo-200/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+                AI automatically sorts your emails into smart categories. Keep
+                your inbox organized with custom labels.
               </p>
             </article>
             <article>
@@ -159,11 +174,12 @@ export default function Features() {
                 <path d="m7.454 2.891.891-.454L7.437.655l-.891.454a12 12 0 0 0 0 21.382l.89.454.91-1.781-.892-.455a10 10 0 0 1 0-17.818ZM17.456 1.11l-.891-.454-.909 1.782.891.454a10 10 0 0 1 0 17.819l-.89.454.908 1.781.89-.454a12 12 0 0 0 0-21.382Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Flexible Workflows
+                Real-time Synchronization
               </h3>
               <p className="text-indigo-200/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+                Stay in sync with Gmail's servers in real-time. All changes are
+                instantly reflected across your devices, ensuring you're always
+                up to date.
               </p>
             </article>
             <article>
@@ -180,11 +196,12 @@ export default function Features() {
                 <path d="M19.406 3.844 6.083 20.497.586 15 2 13.586l3.917 3.917L17.844 2.595l1.562 1.25Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Unified Timeline
+                Privacy-First Design
               </h3>
               <p className="text-indigo-200/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+                Your data stays yours. As an open-source solution, Melify
+                ensures complete transparency and control over your email data
+                and AI processing.
               </p>
             </article>
           </div>
