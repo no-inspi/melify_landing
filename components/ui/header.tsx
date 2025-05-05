@@ -32,7 +32,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/documentation"
+                  href="https://doc.melify.io"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Documentation
